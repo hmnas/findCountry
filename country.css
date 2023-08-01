@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin: 70px auto;
+    font-family: sans-serif;
+    width: fit-content;
+}
+
+.country-flag img {
+    width: 100%;
+    object-fit: cover;
+    height: 160px;
+}
+
+.country-data {
+    padding: 5px;
+    margin: 5px 40px;
+    width: 240px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.country {
+    margin: 5px;
+    border: 1px solid;
+    width: 270px;
+    overflow: hidden;
+    background-color: rgb(252, 241, 227);
+    border-radius: 5px;
+    box-shadow: -2px -2px 5px grey;
+}
+
+.country:nth-child(2) {
+    width: 260px;
+    height: auto;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.country:nth-child(3) {
+    width: 260px;
+    height: auto;
+    box-shadow: 2px 2px 5px grey;
+}
+
+
+.country-data div:first-child {
+    margin: 0px 0 20px;
+}
+
+.country:nth-child(2) .country-data div:first-child~p,
+.country:nth-child(3) .country-data div:first-child~p {
+    margin: -2px 0;
+}
+
+.country-data div:first-child p:first-child {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px;
+}
